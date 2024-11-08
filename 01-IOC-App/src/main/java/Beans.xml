@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="car" class="com.learning.beans.Car">
+        	<property name="iengine" ref="petrolEngine"/>
+        </bean>
+        <bean id="dieselEngine" class="com.learning.beans.DieselEngine"/>
+        <bean id="electricEngine" class="com.learning.beans.ElectricEngine"/>
+        <bean id="hydrogenEngine" class="com.learning.beans.HydrogenEngine"/>
+        <bean id="petrolEngine" class="com.learning.beans.PetrolEngine"/>
+</beans>
